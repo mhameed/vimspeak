@@ -15,6 +15,7 @@ augroup ins_beep
     autocmd!
     autocmd InsertEnter * :call system('play -q ' . s:InsertEnterSound . ' &')
     autocmd InsertLeave * :call system('play -q ' . s:InsertLeaveSound . ' &')
+" autocmd insertCharPre * :call system('play -q ' . s:InsertLeaveSound . ' &')
 augroup END
 
 function MhGetline(lnum)
